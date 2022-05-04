@@ -1,0 +1,35 @@
+- declaring string value using template string
+  add dynamic value from an object
+  access values within nested object or array
+
+- spread operator
+  copy an array and make a new array
+  filter an array with filter()
+
+- arrow functions
+  todo:
+    * create AF that doesn't take params and returns a value
+    * create AF that takes one param and returns it after doubling it
+    * create AF that takes more than one param and does some arithmetic operations using those and returns the result
+
+- destructuring
+  objects
+  arrays inside objects
+
+- declare an object using shorthand
+ let someObj = {
+   cat,
+   dog,
+   bird
+ }
+ this creates a k:v pair with the same name
+
+- default parameters
+  const errorTest = (status: false, msg: '') => {
+    return <Error/>
+  }
+  this passes default params of a status of false and a message of blank string
+
+- optional chaining
+  ?. instead of .
+  checks first to make sure object is not null or undefined before attempting to access the value

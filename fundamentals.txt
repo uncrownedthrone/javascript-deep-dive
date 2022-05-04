@@ -1,0 +1,38 @@
+- when and how to use:
+  let
+  const
+  var
+
+- conditional statements
+  > < >= <= == != === !==
+  && ||
+  if, else if
+
+- arrays
+  length
+  index
+  push
+  pop
+  indexOf
+  includes
+  slice
+  splice
+  shift
+  unshift
+  join
+
+- loops
+  for
+  while
+  for of
+  for in
+
+- functions
+  declare
+  when to return and when not to
+  pass params
+
+- objects
+  declare
+  access its properties (dot notation)
+  how to use array/another object as an object value

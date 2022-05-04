@@ -1,0 +1,15 @@
+- math library. learn:
+  min()
+  max()
+  ceil()
+  floor()
+  abs()
+  round()
+  random()
+
+- declare a Date
+  how to get time from the date and format it
+
+- use of RegEx
+
+- parse and stringify JSON values

@@ -1,0 +1,9 @@
+- storage
+  local
+  session
+
+- Location API in browser
+
+- History API in browser
+
+- fetch data from jsonplaceholder site and print data in the console

@@ -1,0 +1,24 @@
+- string
+  how to declare
+  how to find specific char
+  length
+  includes indexOf
+  toUpperCase
+  toLowerCase
+  subString
+  concat
+  find whether its mutable or immutable
+
+- numbers
+  integers and floats
+  convert strings to numbers
+  check if integer or not
+  NAN
+
+- true and false
+  truthy
+  falsy
+
+- null and undefined
+  whats the difference
+  when and how to check this
