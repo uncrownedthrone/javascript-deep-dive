@@ -1,0 +1,65 @@
+S single responsibility
+  - everything should have only one reason to change
+  - helps to understand the context and responsibility of what's being
+    built and when there is a need for change
+  - think in terms of who is going to use it (roles & user)
+  - example
+    -- finance and technical department need salary calculated, hours worked, and saved in a db
+      WRONG:
+        class Employee {
+          calculateSalary()
+          hoursWorked()
+          storeToDb()
+        }
+      RIGHT:
+        class Employee {
+          calculateSalary()
+          hoursWorked()
+          storeToDb()
+        }
+        class Technical extends Employee {
+          calculateSalary()
+          hoursWorked()
+        }
+        class Finance extends Employee {
+          calculateSalary()
+          hoursWorked()
+        }
+
+O open-closed
+  - a change in behavior should be possible without changing existing code
+  - should be done by extension points and creating plug-in code
+  - we should be able to introduce new features without changing the
+    present code
+      WRONG:
+        a bunch of if or switch statements
+  - be able to add a new feature by extending current functionality
+
+
+L liskov substitution
+  - derived objects or types must be substitutable for their base
+  - objects of a superclass should be able to be replaced with objects
+    of subclasses without the app breaking
+
+I interface segregation
+  - client should not be forced to depend on interfaces it doesn't use
+  - this aims to reduce the negative consequences of using large interfaces
+    by breaking them down into smaller ones
+  - clients should not be exposed to methods they do not require
+  - think about a restaurant with mutliple menus:
+    - all
+      - veggie
+      - vegan
+      - kids
+    each person only gets the menu for them
+
+D dependency inversion
+  - we should rely on abstractions, not concrete implementations and
+    ownership that states that low level implementation should depend on high level concepts
+  - when one class is used inside another, this is dependency
+  - low level modules should not be relied upon by high level modules
+  - example
+    - TV remote battery
+      - remote needs a battery
+      - not dependent on battery brand
+        - the TV remote is loosely coupled with brand name
