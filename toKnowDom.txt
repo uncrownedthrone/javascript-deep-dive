@@ -1,0 +1,40 @@
+HTML gets parsed into tree of nodes
+  browser is parsing HTML into the DOM
+  each element gets converted to a node object
+
+every HTML element is a node object
+  most common:
+    element, text, and document
+  example:
+  <a href="contact.html">Contact</a>
+    this is a node object of HTMLAnchorElement
+    that has a text node of 'Contact'
+
+  the browser has a Node object and the Node object
+  has other nodes that the DOM inherits from
+
+every node in DOM tree inherits from the Node object
+  all node types inherit from the Node
+  Node is a JS constructor function
+  a constructor function will initialise a new object and return it
+
+  Node constructor is a function that returns an object with node types
+
+different ways to create and add nodes to DOM
+  web APIs allow us to create our own DOM notes with JS
+  example:
+    document.querySelector('body').innerHTML = '<div></div>'
+
+    this will replace all nodes in the body with a div node
+
+<!DOCTYPE>
+  needed in the start of an HTML document but not anymore
+
+fragments
+  a fragment is a node object BUT which is never a part of the DOM tree
+  instead, it's replaced by all its children and the fragment is only
+  part of memory
+  since it's only in memory, it could make the performance better
+  becuase it doesn't cause a reflow when children are appended
+
+  similar to React.Fragment <></> but React does not call createFragment

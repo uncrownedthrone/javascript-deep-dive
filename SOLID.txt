@@ -1,4 +1,4 @@
-S single responsibility
+S single responsibility (SRP)
   - everything should have only one reason to change
   - helps to understand the context and responsibility of what's being
     built and when there is a need for change
@@ -26,7 +26,7 @@ S single responsibility
           hoursWorked()
         }
 
-O open-closed
+O open-closed (OCP)
   - a change in behavior should be possible without changing existing code
   - should be done by extension points and creating plug-in code
   - we should be able to introduce new features without changing the
@@ -36,12 +36,12 @@ O open-closed
   - be able to add a new feature by extending current functionality
 
 
-L liskov substitution
+L liskov substitution (LSP)
   - derived objects or types must be substitutable for their base
   - objects of a superclass should be able to be replaced with objects
     of subclasses without the app breaking
 
-I interface segregation
+I interface segregation (ISP)
   - client should not be forced to depend on interfaces it doesn't use
   - this aims to reduce the negative consequences of using large interfaces
     by breaking them down into smaller ones
@@ -53,7 +53,7 @@ I interface segregation
       - kids
     each person only gets the menu for them
 
-D dependency inversion
+D dependency inversion (DIP)
   - we should rely on abstractions, not concrete implementations and
     ownership that states that low level implementation should depend on high level concepts
   - when one class is used inside another, this is dependency
